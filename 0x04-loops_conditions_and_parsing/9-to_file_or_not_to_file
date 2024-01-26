@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 # This script relays information about a file
 
-if test -e school
+FILES="school"
+
+if [ -e "$FILES" ]
 then
 	echo "school file exists"
-	if test -s school
+	if [ ! -s "$FILES" ]
 	then
-		echo "school file is not empty"
-	else
 		echo "school file is empty"
+	else
+		echo "school file is not empty"
 	fi
-	if test -f school
+	if [ -f "$FILES" ]
 	then
 		echo "school is a regular  file"
 	fi
