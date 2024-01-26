@@ -1,7 +1,7 @@
-#1/usr/bin/env bash
+#!/usr/bin/env bash
 # This script relays information about a file
 
-if test -e shool
+if test -e school
 then
 	echo "school file exists"
 	if test -s school

@@ -6,5 +6,5 @@ FILE_LIST=$(ls -1)
 
 for file in $FILE_LIST
 do
-	echo "$file#*-}"
+	echo "${file#*-}"
 done
