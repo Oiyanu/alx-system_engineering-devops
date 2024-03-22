@@ -1,4 +1,11 @@
-# Install puppet-lint
-  exec { 'puppet-lint':
-  command => '/bin/gem install puppet-lint -v 2.5.0'
-    }
+# This manifest installs a package, flask
+
+package { 'flask':
+    ensure   => '2.1.0',
+    provider => 'pip3',
+}
+
+package { 'werkzeug':
+    ensure   => '2.1.1',
+    provider => 'pip3',
+}   
