@@ -1,3 +1,4 @@
+#!/usr/bin/pup
 # This manifest installs a package, flask
 
 package { 'flask':
