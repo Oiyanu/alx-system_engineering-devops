@@ -1,4 +1,5 @@
 #!/usr/bin/pup
+
 # This manifest installs a package, flask
 
 package { 'flask':
@@ -9,4 +10,4 @@ package { 'flask':
 package { 'werkzeug':
     ensure   => '2.1.1',
     provider => 'pip3',
-}   
+}
