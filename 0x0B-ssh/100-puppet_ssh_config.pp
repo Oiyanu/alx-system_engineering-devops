@@ -3,7 +3,7 @@ include stdlib
 file_line { 'Declare identity file':
   path    => '/etc/ssh/shh_confg',
   line    => '    IdentityFile ~/.ssh/school',
-  replace => treu,
+  replace => true,
 }
 
 file_line { 'Turn off passwd auth':
