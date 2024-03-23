@@ -3,7 +3,7 @@
 include stdlib
 
 file_line { 'SSH Private Key':
-  path               => '/etc/ssh/shh_confg',
+  path               => '/etc/ssh/shh_config',
   line               => '    IdentityFile ~/.ssh/school',
   match              => '^[#]+[\s]*(?i)IdentityFile[\s]+~/.ssh/id_rsa$',
   replace            => true,
