@@ -1,7 +1,5 @@
 # set up a client SSH configuration file so that we can connect to a server
-
 include stdlib
-
 file_line { 'SSH Private Key':
   path               => '/etc/ssh/shh_config',
   line               => '    IdentityFile ~/.ssh/school',
